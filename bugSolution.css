@@ -1,0 +1,11 @@
+To fix the issue, ensure the parent element has an explicitly defined width (e.g., using `width: 500px;`). Also, ensure consistent units are used within the calculation. If mixing units is necessary, ensure proper conversion (e.g., convert pixels to percentages or vice-versa).  Below is an example of a corrected stylesheet:
+```css
+.container {
+  width: 500px; /* Explicitly define parent width */
+}
+
+.element {
+  width: calc(100% - 20px);
+}
+```
+This revised code provides a clear parent width, leading to predictable results from the `calc()` function.
